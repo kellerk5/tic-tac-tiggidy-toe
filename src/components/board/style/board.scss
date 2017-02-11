@@ -1,0 +1,11 @@
+.board-container {
+	text-align: center;
+	width: 800px;
+	position: relative;
+
+	&__game-status {
+		font-size: 30px;
+		text-align: center;
+	}
+}
+

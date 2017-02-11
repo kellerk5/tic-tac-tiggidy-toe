@@ -1,0 +1,42 @@
+.square-container {
+	position: relative;
+	display: inline-block;
+	margin: 10px;
+	width: 200px;
+	height: 200px;
+	background-color: white;
+	border: 1px solid black;
+	-webkit-animation-name: slowFadeOut; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: .5s; /* Safari 4.0 - 8.0 */
+	animation-name: slowFadeOut;
+	animation-duration: .5s;
+
+	&:hover {
+		border: 5px solid black;
+		//animation
+		-webkit-animation-name: slowFadeIn; /* Safari 4.0 - 8.0 */
+		-webkit-animation-duration: .5s; /* Safari 4.0 - 8.0 */
+		animation-name: slowFadeIn;
+		animation-duration: .5s;
+	}
+}
+
+@-webkit-keyframes slowFadeIn {
+    0%   {border: 1px solid black;}
+    100% {border: 5px solid black;}
+}
+
+@keyframes slowFadeIn {
+    0%   {border: 1px solid black;}
+    100% {border: 5px solid black;}
+}
+
+@-webkit-keyframes slowFadeOut {
+    0%   {border: 5px solid black;}
+    100% {border: 1px solid black;}
+}
+
+@keyframes slowFadeOut {
+    0%   {border: 5px solid black;}
+    100% {border: 1px solid black;}
+}
